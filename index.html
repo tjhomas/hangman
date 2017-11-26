@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Hangman</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="script.js"></script>
-  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,7 +27,7 @@
     </section>
 
     <!-- Display secret hint -->
-  	<section id="hint">
+    <section id="hint">
       <span data-ng-show="wrong == 99" class="welcome">hangman</span><!-- Welcome message -->
       <span data-ng-repeat="letter in secret track by $index">
         <!-- Show underscore if not guessed -->
@@ -40,7 +40,7 @@
     </section>
 
     <!-- Select a letter -->
-		<section id="alphabet" data-ng-class="{ 'welcome': wrong == 99 }">
+  <section id="alphabet" data-ng-class="{ 'welcome': wrong == 99 }">
       <button data-ng-repeat="letter in alphabet"
         data-ng-click="active && guess(letter);"
         data-ng-bind="letter"
