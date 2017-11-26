@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hangman</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game" data-ng-app="hmmApp" data-ng-controller="hmmCtrl">
+
+    <!-- Hangman image -->
+    <section id="image">
+      <ng-include src="'hangman.svg'"></ng-include>
+      <!-- Game start button -->
+      <button data-ng-click="start();">
+        <span data-ng-show="active">re</span>start
+      </button>
+      <!-- Alert message banner -->
+      <span id="banner" data-ng-show="banner.message.length" data-ng-class="banner.style">
+        <i data-ng-show="banner.loading" class="fa fa-gear fa-spin"></i>
+        <span data-ng-bind="banner.message"></span>
+      </span>
+    </section>
+
+    <!-- Display secret hint -->
+  	<section id="hint">
+      <span data-ng-show="wrong == 99" class="welcome">hangman</span><!-- Welcome message -->
+      <span data-ng-repeat="letter in secret track by $index">
+        <!-- Show underscore if not guessed -->
+        <span data-ng-if="active && guesses.indexOf(letter) < 0">_</span>
+        <!-- Show letter if guessed -->
+        <span data-ng-if="guesses.indexOf(letter) >= 0" data-ng-bind="letter"></span>
+        <!-- Reveal the remaining letters at game over -->
+        <span data-ng-if="!active && guesses.indexOf(letter) < 0" data-ng-bind="letter" class="missed-letter"></span>
+      </span>
+    </section>
+
+    <!-- Select a letter -->
+		<section id="alphabet" data-ng-class="{ 'welcome': wrong == 99 }">
+      <button data-ng-repeat="letter in alphabet"
+        data-ng-click="active && guess(letter);"
+        data-ng-bind="letter"
+        data-ng-disabled="!active || guesses.indexOf(letter) >= 0"
+        data-ng-class="{'guessed': guesses.indexOf(letter) >= 0 }">
+      </button>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="400px"
+	 height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<g>
+	<rect x="64" y="318" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="272" height="44"/>
+	<rect x="324" y="14" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="12" height="304"/>
+	<rect x="114" y="14" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="210" height="11"/>
+</g>
+<g data-ng-show="wrong >= 1">
+	<rect x="184" y="24" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="11" height="44"/>
+	<ellipse fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" cx="191" cy="96.702" rx="37" ry="35.702"/>
+</g>
+<g data-ng-show="wrong >= 2">
+	<rect x="164.5" y="140" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="52.375" height="74"/>
+	<rect x="183" y="131.757" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="16" height="8.243"/>
+</g>
+<g data-ng-show="wrong >= 3">
+	<line fill="none" stroke="#D1D3D4" stroke-width="13" stroke-miterlimit="10" x1="169.5" y1="142.878" x2="135.5" y2="200"/>
+</g>
+<g data-ng-show="wrong >= 4">
+	<line fill="none" stroke="#D1D3D4" stroke-width="13" stroke-miterlimit="10" x1="211.964" y1="142.878" x2="245.964" y2="200"/>
+</g>
+<g data-ng-show="wrong >= 5">
+	<rect x="164.5" y="214" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="22.5" height="65.75"/>
+</g>
+<g data-ng-show="wrong >= 6">
+	<line stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="195.127" y1="80.015" x2="211.213" y2="101.529"/>
+	<line fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="210.253" y1="81.801" x2="195" y2="101.5"/>
+	<line stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="169.627" y1="80.894" x2="185.713" y2="102.407"/>
+	<line fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" x1="184.753" y1="82.68" x2="169.5" y2="102.378"/>
+	<rect x="194.375" y="214" fill="#D1D3D4" stroke="#D1D3D4" stroke-miterlimit="10" width="22.5" height="65.75"/>
+</g>
+<g data-ng-show="!active && success">
+	<g display="inline">
+		<path fill="#D2D3D4" d="M112.733,99.334c19.63,0,35.543,15.355,35.543,34.297s-15.913,34.296-35.543,34.296
+			c-19.631,0-35.544-15.355-35.544-34.296S93.102,99.334,112.733,99.334"/>
+		<path fill="none" stroke="#D2D3D4" stroke-miterlimit="10" d="M112.733,99.334c19.63,0,35.543,15.355,35.543,34.297
+			s-15.913,34.296-35.543,34.296c-19.631,0-35.544-15.355-35.544-34.296S93.102,99.334,112.733,99.334"/>
+		<rect x="86.233" y="175.523" fill="#D2D3D4" width="52.375" height="74"/>
+		<rect x="86.233" y="175.523" fill="none" stroke="#D2D3D4" stroke-miterlimit="10" width="52.375" height="74"/>
+		<rect x="104.733" y="167.28" fill="#D2D3D4" width="16" height="8.243"/>
+		<rect x="104.733" y="167.28" fill="none" stroke="#D2D3D4" stroke-miterlimit="10" width="16" height="8.243"/>
+		<line fill="none" stroke="#D2D3D4" stroke-width="13" stroke-miterlimit="10" x1="32.241" y1="112.137" x2="90.827" y2="180.688"/>
+		<polyline fill="#D2D3D4" points="86.233,315.273 86.233,249.523 108.733,249.523 108.733,315.273 		"/>
+		<polyline fill="none" stroke="#D2D3D4" stroke-miterlimit="10" points="86.233,315.273 86.233,249.523 108.733,249.523
+			108.733,315.273 		"/>
+		<polyline fill="#D2D3D4" points="116.108,315.273 116.108,249.523 138.608,249.523 138.608,315.273 		"/>
+		<polyline fill="none" stroke="#D2D3D4" stroke-miterlimit="10" points="116.108,315.273 116.108,249.523 138.608,249.523
+			138.608,315.273 		"/>
+		<line fill="none" stroke="#D2D3D4" stroke-width="13" stroke-miterlimit="10" x1="133.979" y1="180.688" x2="192.089" y2="112.694"/>
+	</g>
+</g>
+</svg>
