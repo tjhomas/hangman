@@ -132,3 +132,8 @@ body {
 	#banner { font-size: 1.2em; }
 	#game { width: 80%; }
 }
+/* Chrome fix: adding radius automatically */
+button {
+	border-radius: 0;
+}
+
