@@ -1,4 +1,5 @@
 # Hangman
+![screenshot](screenshot.jpg?raw=true)
 ## Overview
 This is a simple JavaScript-powered Hangman game, designed to be fun, easy, responsive, and mobile-friendly. It uses HTML5, CSS3, JavaScript/AngularJS, and a remote API for retreiving new words that are between 6 and 12 characters. The user is given 6 incorrect attempts before the game ends.
 ## Background
